@@ -8,3 +8,5 @@ tmp
 dist
 .sass-cache
 .tmp
+*.log
+app/css
