@@ -31,7 +31,7 @@ module.exports = function(config) {
 
 		LogLevel: config.LOG_DEBUG,
 
-		browsers: ['Chrome'],
+		browsers: ['PhantomJS'],
 
 		junitReporter: {
 			outputFile: 'test_out/unit.xml',
