@@ -1,21 +1,22 @@
 {
-	"name": "angular-requirejs-seed",
+	"name": "angular-requirejs-seed-grunt",
 	"version": "0.2.0",
 	"description": "AngularJS seed project modified for requireJS support.",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/tnajdek/angular-requirejs-seed.git"
+		"url": "git://github.com/EscovadorDeBit/angular-requirejs-seed-grunt.git"
 	},
 	"license": "MIT",
 	"directories": {
 		"test": "test"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "./scripts/test.sh",
+		"teste2e": "./scripts/e2e-test.sh",
+		"server": "cd app && ../scripts/web-server.js"
 	},
-	"author": "Tom Najdek <tom@doppnet.com>",
+	"author": "Gilglécio Santos <gilglecio_765@hotmail.com>",
 	"readmeFilename": "README.md",
-	"gitHead": "22263bfe493ebc74437c80fc4b4d37c24d1aa6f4",
 	"devDependencies": {
 		"karma-script-launcher": "~0.1.0",
 		"karma-chrome-launcher": "~0.1.0",

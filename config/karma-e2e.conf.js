@@ -1,4 +1,5 @@
 module.exports = function(config) {
+	
 	config.set({
 		basePath: '../',
 		frameworks: ['ng-scenario'],
@@ -8,7 +9,7 @@ module.exports = function(config) {
 
 		autoWatch: false,
 
-		browsers: ['Firefox'],
+		browsers: ['Chrome'],
 
 		singleRun: true,
 

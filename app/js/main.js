@@ -8,11 +8,13 @@ require.config({
 		text: '../bower_components/requirejs-text/text'
 	},
 	shim: {
-		'angular' : {'exports' : 'angular'},
+		'angular': {
+			'exports': 'angular'
+		},
 		'angularRoute': ['angular'],
 		'angularMocks': {
-			deps:['angular'],
-			'exports':'angular.mock'
+			deps: ['angular'],
+			'exports': 'angular.mock'
 		}
 	},
 	priority: [
@@ -20,17 +22,17 @@ require.config({
 	]
 });
 
-//http://code.angularjs.org/1.2.1/docs/guide/bootstrap#overview_deferred-bootstrap
 window.name = "NG_DEFER_BOOTSTRAP!";
 
-require( [
+require([
 	'angular',
 	'app',
 	'routes'
 ], function(angular, app, routes) {
+
 	var $html = angular.element(document.getElementsByTagName('html')[0]);
 
 	angular.element().ready(function() {
-		angular.resumeBootstrap([app['name']]);
+		angular.resumeBootstrap([app.name]);
 	});
 });

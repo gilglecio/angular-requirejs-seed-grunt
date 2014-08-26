@@ -2,12 +2,15 @@
 
 define(['angular', 'services'], function(angular, services) {
 
-	/* Directives */
-	
-	angular.module('myApp.directives', ['myApp.services'])
-		.directive('appVersion', ['version', function(version) {
+	angular.module('App.directives', ['App.services'])
+
+	.directive('appVersion', [
+		'version',
+		function(version) {
+
 			return function(scope, elm, attrs) {
 				elm.text(version);
-		};
-	}]);
+			};
+		}
+	]);
 });

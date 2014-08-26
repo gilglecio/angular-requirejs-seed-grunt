@@ -7,15 +7,13 @@ define([
 	'directives',
 	'controllers',
 	'angularRoute',
-	], function (angular, filters, services, directives, controllers) {
+], function(angular, filters, services, directives, controllers) {
 
-		// Declare app level module which depends on filters, and services
-		
-		return angular.module('myApp', [
-			'ngRoute',
-			'myApp.filters',
-			'myApp.services',
-			'myApp.directives',
-			'myApp.controllers'
-		]);
+	return angular.module('App', [
+		'ngRoute',
+		'App.filters',
+		'App.services',
+		'App.directives',
+		'App.controllers'
+	]);
 });
