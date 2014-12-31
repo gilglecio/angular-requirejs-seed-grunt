@@ -24,7 +24,7 @@ module.exports = function(config) {
 				pattern: 'app/bower_components/**/*.js',
 				included: false
 			},
-			'test/main-test.js'
+			'main-test.js'
 		],
 
 		autoWatch: true,

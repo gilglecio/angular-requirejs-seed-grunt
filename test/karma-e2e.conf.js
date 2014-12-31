@@ -4,7 +4,7 @@ module.exports = function(config) {
 		basePath: '../',
 		frameworks: ['ng-scenario'],
 		files: [
-			'test/e2e/**/*.js'
+			'e2e/**/*.js'
 		],
 
 		autoWatch: false,
